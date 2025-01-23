@@ -11,7 +11,7 @@ def load_env():
     load_dotenv()
 
 
-@pytest.fixture(scope='function',
+@pytest.fixture(scope='session',
                 params=[('9.0', 'android', 'Google Pixel 3')],
                 ids=['base'],
                 autouse=True)
